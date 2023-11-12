@@ -4,3 +4,49 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  width: 75%;
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.carousel {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+  display: none;
+}
+
+.carousel .carousel__item--visible {
+  display: block;
+}
+
+.carousel .carousel__actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button {
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: #ffffff88;
+  font-size: 2rem;
+  margin: 1rem;
+}
